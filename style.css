@@ -1,18 +1,33 @@
-.pokedex{
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Righteous&family=Sono:wght@200;400;700&display=swap');
+
+body,
+* {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.pokedex {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.container-button {
     display: flex;
-    align-items:center;
+    margin: 20px;
+    text-align: center;
+    justify-content: center;
+
 }
 
-.list-img{
-    width: 50px ;
+.list-img {
+    width: 110px;
 }
 
-summary{
+summary {
     display: flex;
     align-items: center;
 }
 
-details{
+details {
     width: 95%;
     margin: auto;
     border: 1px solid;
@@ -21,11 +36,11 @@ details{
     border-radius: 5px;
 }
 
-.spacer{
+.spacer {
     flex-grow: 1;
 }
 
-.type{
+.type {
     margin: 4px;
     padding: 4px;
     /* border: 1px red solid; */
