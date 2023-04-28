@@ -111,10 +111,10 @@ hr{
         max-width: 100vw;
     }
 
-    /* .type {
+    .type {
         display: flex;
         justify-content: end;
         margin: 4px;
         padding: 4px;
-    } */
+    }
 }
