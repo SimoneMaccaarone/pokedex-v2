@@ -17,7 +17,7 @@ function displayPokemons(pokemons) {
                                                 <div class="spacer"></div>
             <div class="class-type">${pokemon.types.map(obj => `<span class= "type">${obj.type.name}</span>`).join('|')}</div>
         </summary>
-
+        <hr>
     <div class="basso-container">
 
         <div class="stats-class">
