@@ -1,5 +1,3 @@
-console.log('ciao')
-
 let actualPageIndex;
 getNextPage();
 
@@ -10,24 +8,38 @@ function displayPokemons(pokemons) {
     pokemonContainer.innerHTML = '';
 
     for (const pokemon of pokemons) {
-        pokemonContainer.innerHTML += `<details>
+        pokemonContainer.innerHTML += `
+    <details>
         <summary>
-            <span>${pokemon.id}</span>
-            <img class="list-img"
-                src="${pokemon.sprites.front_default}" alt=" image of ${pokemon.name}">
+            <span class="id-pokemon">${pokemon.id}</span>
+                <img class="list-img"src="${pokemon.sprites.front_default}" alt=" image of ${pokemon.name}">
             <span>${pokemon.name}</span>
-
-            <div class="spacer"></div>
-                ${pokemon.types.map(obj => `<span class= "type">${obj.type.name}</span>`).join('|')}
+                                                <div class="spacer"></div>
+            <div class="class-type">${pokemon.types.map(obj => `<span class= "type">${obj.type.name}</span>`).join('|')}</div>
         </summary>
-        <div>
+
+    <div class="basso-container">
+
+        <div class="stats-class">
             <ul>
+            <h3>Stats</h3>
+            ${createStatsList(pokemon)}
+            </ul>
+        </div>
+    
+
+    <div class="abilities-class">
+            <ul>
+            <h3>Abilities</h3>
             ${createAbilitiesList(pokemon)}
             </ul>
         </div>
+    </div>
+
     </details>`
 
     }
+    console.log(pokemons)
 }
 // FOR per creare una lista delle abilita
 function createAbilitiesList(pokemon) {
@@ -37,7 +49,13 @@ function createAbilitiesList(pokemon) {
     }
     return abilitiesHTML;
 }
-
+function createStatsList(pokemon) {
+    let statsHTML = '';
+    for (const object of pokemon.stats) {
+        statsHTML += `<li>${object.stat.name}: ${object.base_stat}</li>`
+    }
+    return statsHTML;
+}
 // ----- Prev & Next ----
 function getPreviousPage() {
     actualPageIndex--;
