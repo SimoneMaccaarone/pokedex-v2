@@ -100,11 +100,21 @@ hr{
 
 
 @media screen and (max-width: 600px) {
-    .type {
+
+    body{
+        display:flex ;
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+    }
+    summary{
+        max-width: 100vw;
+    }
+
+    /* .type {
         display: flex;
         justify-content: end;
         margin: 4px;
         padding: 4px;
-        /* border: 1px red solid; */
-    }
+    } */
 }
