@@ -18,16 +18,17 @@ function displayPokemons(pokemons) {
             <div class="class-type">${pokemon.types.map(obj => `<span class= "type">${obj.type.name}</span>`).join('|')}</div>
         </summary>
         <hr>
+
+
     <div class="basso-container">
 
         <div class="stats-class">
             <ul>
             <h3>Stats</h3>
             ${createStatsList(pokemon)}
-            </ul>
+        
         </div>
-    
-
+        
     <div class="abilities-class">
             <ul>
             <h3>Abilities</h3>
@@ -41,6 +42,19 @@ function displayPokemons(pokemons) {
     }
     console.log(pokemons)
 }
+
+// FOR per creare una lista delle stats
+function createStatsList(pokemon) {
+    let statsHTML = '';
+    for (const object of pokemon.stats) {
+        statsHTML += `<li>${object.stat.name}: ${object.base_stat}</li>`
+    }
+    return statsHTML;
+}
+function createMiniStats(pokemon){
+    
+}
+
 // FOR per creare una lista delle abilita
 function createAbilitiesList(pokemon) {
     let abilitiesHTML = '';
@@ -48,13 +62,6 @@ function createAbilitiesList(pokemon) {
         abilitiesHTML += `<li>${object.ability.name}</li>`
     }
     return abilitiesHTML;
-}
-function createStatsList(pokemon) {
-    let statsHTML = '';
-    for (const object of pokemon.stats) {
-        statsHTML += `<li>${object.stat.name}: ${object.base_stat}</li>`
-    }
-    return statsHTML;
 }
 // ----- Prev & Next ----
 function getPreviousPage() {
