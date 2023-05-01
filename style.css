@@ -12,15 +12,20 @@ body,* {
 } */
 /* ----------------------------------------- */
 
-.title{
+.title-container{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .pokedex {
     margin-top: 50px;
-    text-align: center;
+    /* text-align: center; */
 }
 .pokeball-img{
-    width: 20%;
+    /* border: solid 1px red; */
+    margin: 0px;
+    width: 5%;
+    height: 5%;
 }
 /* -------------- */
 .prev,.next{
