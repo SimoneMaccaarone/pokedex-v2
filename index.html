@@ -8,21 +8,21 @@
     <title>Pokedex V2</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<!-- <img src="./assets/pokedex.png" alt=""> -->
+
 <body>
-<!-- <a href="./pokedexxxxx/pokedex.html" target="_blank" rel="noopener noreferrer">pokedex</a> -->
+    <!-- <a href="./pokedexxxxx/pokedex.html" target="_blank" rel="noopener noreferrer">pokedex</a> -->
+    <div class="bkg-img">
+        <div class="title-container">
+            <h1 class="pokedex">Pokedex</h1>
+            <img class="pokeball-img" src="./assets/pokeball.png" alt="">
+        </div>
+        <div class="container-button">
+            <button class="prev" onclick="getPreviousPage()">Prev</button>
+            <button class="next" onclick="getNextPage()">Next</button>
+        </div>
 
-    <div class="title-container">
-        <h1 class="pokedex">Pokedex</h1>
-        <img class="pokeball-img" src="./assets/pokeball.png" alt="">
+        <div class="container-main" id="pokemon-container"></div>
     </div>
-    <div class="container-button">
-        <button class="prev" onclick="getPreviousPage()">Prev</button>
-        <button class="next" onclick="getNextPage()">Next</button>
-    </div>
-
-    <div class="container-main" id="pokemon-container">
-
 </body>
 <script src="./services/poke-service.js"></script>
 <script src="./app.js"></script>

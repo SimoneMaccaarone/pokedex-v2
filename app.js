@@ -31,7 +31,7 @@ function displayPokemons(pokemons) {
         
         <div class="miniStats-class">
         <ul>
-        <h5>Height: ${(pokemon.height) * 10}cm </h5>
+        <h5>Height: ${(pokemon.height) * 10}cm</h5>
         <h5>Weight: ${(pokemon.weight) / 10}Kg</h5>
         </ul>
     </div>
