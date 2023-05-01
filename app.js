@@ -19,17 +19,24 @@ function displayPokemons(pokemons) {
         </summary>
         <hr>
 
-
     <div class="basso-container">
+
 
         <div class="stats-class">
             <ul>
             <h3>Stats</h3>
             ${createStatsList(pokemon)}
-        
+        </ul>
         </div>
         
-    <div class="abilities-class">
+        <div class="miniStats-class">
+        <ul>
+        <h5>Height: ${(pokemon.height) * 10}cm </h5>
+        <h5>Weight: ${(pokemon.weight) / 10}Kg</h5>
+        </ul>
+    </div>
+
+        <div class="abilities-class">
             <ul>
             <h3>Abilities</h3>
             ${createAbilitiesList(pokemon)}
@@ -37,6 +44,7 @@ function displayPokemons(pokemons) {
         </div>
     </div>
 
+    
     </details>`
 
     }
@@ -51,9 +59,11 @@ function createStatsList(pokemon) {
     }
     return statsHTML;
 }
-function createMiniStats(pokemon){
-    
-}
+
+// FOR per creare una lista delle  mini stats
+// function createMiniStats(pokemon) {
+// miniStatsHTML += `<li>Height:${object.height} </li>`
+// }
 
 // FOR per creare una lista delle abilita
 function createAbilitiesList(pokemon) {
