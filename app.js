@@ -9,7 +9,7 @@ function displayPokemons(pokemons) {
 
     for (const pokemon of pokemons) {
         pokemonContainer.innerHTML += `
-    <details>
+        <details>
         <summary>
             <span class="id-pokemon">${pokemon.id}</span>
                 <img class="list-img"src="${pokemon.sprites.front_default}" alt=" image of ${pokemon.name}">
@@ -44,9 +44,7 @@ function displayPokemons(pokemons) {
         </div>
     </div>
 
-    
     </details>`
-
     }
     console.log(pokemons)
 }
@@ -59,11 +57,6 @@ function createStatsList(pokemon) {
     }
     return statsHTML;
 }
-
-// FOR per creare una lista delle  mini stats
-// function createMiniStats(pokemon) {
-// miniStatsHTML += `<li>Height:${object.height} </li>`
-// }
 
 // FOR per creare una lista delle abilita
 function createAbilitiesList(pokemon) {
