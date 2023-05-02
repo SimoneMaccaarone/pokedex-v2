@@ -46,6 +46,7 @@ background-color: transparent;
     margin: 20px;
     text-align: center;
     justify-content: center;
+    
 }
 
 details {
@@ -54,6 +55,8 @@ details {
     margin: 10px;
     padding: 5px;
     border-radius: 10px;
+    background-color: rgba(201, 198, 44, 0.5);
+
     /* overflow:scroll ; */
 }
 summary {
