@@ -44,9 +44,9 @@ function displayPokemons(pokemons) {
         </div>
     </div>
 
-    </details>`
-    }
-    console.log(pokemons)
+        </details>`
+        }
+        console.log(pokemons)
 }
 
 // FOR per creare una lista delle stats

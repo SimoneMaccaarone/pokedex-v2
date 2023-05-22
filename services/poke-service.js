@@ -24,10 +24,4 @@ class PokeService {
         }
         return Promise.all(requests);
     }
-
-
-
-
-
-
 }
